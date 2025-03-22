@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        #reg {
+            color: red;
+        }
+
+        legend {
+            text-align: center;
+        }
+        fieldset{
+            margin:5px 10px;
+        }
+        textarea{
+            height: 40px;
+            width: 50%;
+            
+        }
+        label{
+            text-align: left;
+            width: 90px;
+            padding-right: 5px;
+            
+        }
+        input[type="text"],input[type="number"],select{
+            height: 25px;
+            width: 600px;
+            margin-left: 10px;
+           
+        }
+        input[type="text"],input[type="number"]{
+            border: 1px solid #df8b37;
+            margin-inline: 20px;
+        }
+        button{
+          height: 30px;
+          margin: 5px;
+          border: none;
+         color: aliceblue;
+        }
+        #register{
+            background-color: #0055ff;
+        
+        }
+        #clear{
+            background-color: #ff0054;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="main">
+        <h1 id="reg">Registation Form</h1>
+        <form>
+            <fieldset>
+                <legend> personal details</legend>
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder=" Enter Name">
+                </fieldset>
+                <fieldset>
+                    <label for="Address">Address:</label>
+                    <input type="text" id="Address">
+                </fieldset>
+                <fieldset>
+                    <label for="Phone">Phone:</label>
+                    <input type="number" id="Phone">
+                </fieldset>
+                <fieldset>
+                    <label for="Gender">Gender</label>
+                    <input type="radio" name="Gender" value="male"><span>Male</span>
+                    <input type="radio" name="Gender" value="female"> <span>Female</span>
+                </fieldset>
+                <fieldset>
+                    <label for="country">Country</label>
+                    <select name="country" id="country">
+                        <option value="">Select country</option>
+                        <optgroup label="Asia">
+                            <option value="NP">Nepal</option>
+                            <option value="IN">India</option>
+                            <option value="PK">Pakistan</option>
+                        </optgroup>
+                        <optgroup label="Europe">
+                            <option value="UG">Unganda</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="NG">Nigeria</option>
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="message">Message</label>
+                    <textarea name="meaaage" id="message"></textarea>
+                </fieldset>
+                <fieldset>
+                    <label for="image">Image</label>
+                    <input type="file" id="image">
+                </fieldset>
+                <fieldset>
+
+                   <input type="checkbox" id="chkbox">  <span>I Accept Tearms & Conditions</span>
+                </fieldset>
+                <fieldset>
+                    <div class="flex">
+                        <button type="submit" id="register">Register</button> 
+                        <button type="reset" id="clear">clear</button>
+                    </div>
+                </fieldset>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
