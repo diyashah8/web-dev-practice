@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Layout</title>
+    <style>
+        header {
+            background: #2a19e8;
+            text-align: center;
+            padding: 2px;
+        }
+
+        footer {
+            background-color: rgb(191, 189, 192);
+            text-align: center;
+            padding: 2px;
+        }
+
+        nav {
+            background-color: rgb(234, 126, 144);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .top-left {
+            display: flex;
+            height: 300px;
+            padding: 3em, o 3em, 0;
+
+        }
+
+        aside {
+
+            background-color: rgb(115, 39, 65);
+
+            flex: 2px;
+
+        }
+
+        main {
+            background-color: rgb(43, 213, 43);
+
+            flex: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <header>
+            <p>Header</p>
+        </header>
+        <main>
+            <nav>
+                <p>menu</p>
+            </nav>
+            <section class="top-left">
+                <aside>
+                    <p>Sidebar</p>
+                </aside>
+                <main>
+                    <p>content</p>
+                </main>
+            </section>
+            </main>
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </section>
+</body>
+</html>
+        
