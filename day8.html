@@ -1,74 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
 </head>
 <style>
-    table tr,th,td {
-            border: 1px solid black;
-            height: 30px;
-        }
+    table {
+        border: 1px solid black;
+        height: 30px;
+        border-collapse: collapse;
+    }
+    td,tr,th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .add{
+        width: 100%;
+    }
+    .button{
+        padding: auto 20px;
+    }
 </style>
+
 <body>
     <section class="top">
-       <table>
+        <table>
 
-        <tr>
-        <th>ID</th>
-        <th>Image</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Address</th>
-        <th>Role</th>
-        <th>Action</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td> <img src="" alt="admin"></td>
-        <td>Diya</td>
-        <td>diya@gmail.com</td>
-        <td>9876543213</td>
-        <td>urlabari-9</td>
-        <td>Admin</td>
-<td>
-            <button type="menu">Edit</button>
-            <button type="button">Delete</button>
-            <button type="submit">save</button>
-        </td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td> <img src="" alt="user"></td>
-        <td>Kajal</td>
-        <td>kajal@gmail.com</td>
-        <td>9876543213</td>
-        <td>urlabari-8</td>
-        <td>user</td>
-        <td>
-            <button type="menu">Edit</button>
-            <button type="button">Delete</button>
-            <button type="submit">save</button>
-        </td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td> <img src="" alt="img"></td>
-        <td>Darpan</td>
-        <td>darpan@gmail.com</td>
-        <td>9876543213</td>
-        <td>urlabari-8</td>
-        <td>user</td>
-        <td>
-            <button type="menu">Edit</button>
-            <button type="button">Delete</button>
-            <button type="submit">save</button>
-        </td>
-    </tr>
-       </table> 
+            <tr>
+                <th>ID</th>
+                <th>Image</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Role</th>
+                <th>Action</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td> <img src="pic.jpg" alt="admin"></td>
+                <td>Diya</td>
+                <td>diya@gmail.com</td>
+                <td>9876543213</td>
+                <td>urlabari-9</td>
+                <td>Admin</td>
+                <td>
+                    <button type="menu">Edit</button>
+                    <button type="button">Delete</button>
+                    <form action="day8.html" method="get">
+                        <input type="hidden" name="mydata" value="data 1 submitted">
+                        <button type="submit">save</button>
+                    
+                    </form>
+                    
+                </td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td> <img src="" alt="user"></td>
+                <td>Kajal</td>
+                <td>kajal@gmail.com</td>
+                <td>9876543213</td>
+                <td>urlabari-8</td>
+                <td>user</td>
+                <td>
+                    <button type="menu">Edit</button>
+                    <button type="button">Delete</button>
+                    <form action="day8.html" method="get">
+                        <input type="hidden" name="mydata" value="data 2 submitted">
+                        <button type="submit">save</button>
+                    
+                    </form>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td> <img src="" alt="img"></td>
+                <td>Darpan</td>
+                <td>darpan@gmail.com</td>
+                <td>9876543213</td>
+                <td>urlabari-8</td>
+                <td>user</td>
+                <td>
+                    <button type="menu">Edit</button>
+                    <button type="button">Delete</button>
+                    <form action="day8.html" method="get">
+                        <input type="hidden" name="mydata" value="data 3 submitted">
+                        <button type="submit">save</button>
+                    
+                    </form>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="button"  colspan="8">
+                <button type="button" class="add" onclick="alert('Diya Shah click add user buttom')"> Add User</button></td>
+
+            </tr>
+
+        </table>
 
     </section>
 </body>
+
 </html>
