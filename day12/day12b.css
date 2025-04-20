@@ -1,1 +1,102 @@
- 
+h1{
+    text-align: center;
+    columns: rgb(67, 66, 66);
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+.hover-effect{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 40%;
+    min-width: 350px;
+    box-sizing: border-box;
+}
+
+.hover-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.grow {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.color {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 2px;
+
+}
+.color:hover {
+    background-color: rgb(7, 8, 105);
+}
+
+.shadow {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+.shadow:hover {
+     box-shadow: black;
+     padding: 1px;
+}
+.animations{
+    display: flex;
+    gap: 10px;
+}
+
+.animation-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.fade {
+    background-color: blue;
+    animation: fade 2s infinite alternate;
+}
+
+@keyframes fade {
+    from { opacity: 1; }
+    to { opacity: 0.4; }
+}
+
+.move {
+    background-color: red;
+    position: relative;
+    animation: move 2s infinite alternate;
+}
+
+@keyframes move {
+    from { left: 0; }
+    to { left: 20px; }
+}
+
+.bounce {
+    background-color: purple;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
