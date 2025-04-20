@@ -57,43 +57,6 @@ h1{
      box-shadow: black;
      padding: 1px;
 }
-.animations{
-    display: flex;
-    gap: 10px;
-}
-
-.animation-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-}
-
-.fade {
-    background-color: blue;
-    animation: fade 2s infinite alternate;
-}
-
-@keyframes fade {
-    from { opacity: 1; }
-    to { opacity: 0.4; }
-}
-
-.move {
-    background-color: red;
-    position: relative;
-    animation: move 2s infinite alternate;
-}
-
-@keyframes move {
-    from { left: 0; }
-    to { left: 20px; }
-}
-
-.bounce {
-    background-color: purple;
-    animation: bounce 1s infinite alternate;
-}
 
 @keyframes bounce {
     0% { transform: translateY(0); }
