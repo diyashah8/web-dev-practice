@@ -1,0 +1,24 @@
+.top-left{
+    border: 1px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    border-left: 5px solid rgb(46, 39, 109);
+}
+.botton{
+    border: 0;
+    color: rgb(236, 233, 233);
+    background-color: brown;
+    margin-left: 20px;
+}
+.learn-more{
+    border: 1px;
+    height: 20px;
+    width: 90o;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(67, 43, 226);
+    color: azure;
+}
