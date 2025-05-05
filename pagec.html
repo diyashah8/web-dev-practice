@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table tr,th,td {
+            border: 1px solid black;
+            height: 30px;
+        }
+
+        table td {
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Basic Html Table</h2>
+    <table>
+        <tr>
+            <th>Item Description</th>
+            <th>Quantity</th>
+            <th>Unit Price</th>
+            <th>Total Amount</th>
+        </tr>
+        <tr>
+            <td>Product A</td>
+            <td>2</td>
+            <td>$10</td>
+            <td>$20</td>
+        </tr>
+        <tr>
+            <td>Pro<span id="b">duct b</span> </td>
+            <td>1</td>
+            <td>$15</td>
+            <td>$15</td>
+        </tr>
+        <tr>
+            <td>Product c</td>
+            <td>3</td>
+            <td>$8</td>
+            <td>$24</td>
+        </tr>
+        <tr>
+            <td>Service Charge</td>
+            <td colspan="2" rowspan="4"> No Data Here</td>
+            <td>$5</td>
+        </tr>
+        
+        <tr>
+            <td>Subtot<al</td>
+            <td>$64</td>
+        </tr>
+        <tr>
+            <td>Tax (10%)</td>
+            <td>$6.40</td>
+        </tr>
+        <tr>
+            <td>Discount (5%)</td>
+            <td>-$3.20</td>
+        </tr>
+        <tr>
+            <td><span class="c">Grand total</span></td>
+            <td>3</td>
+            <td>$8</td>
+            <td>$67.20</td>
+        </tr>
+    </table>
+</body>
+</html>

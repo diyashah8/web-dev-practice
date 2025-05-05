@@ -1,0 +1,17 @@
+var fullName = "Diya Shah";
+let age = 20;
+const birthCountry = "Nepal";
+let favoriteColor = "Red";
+let hobby = "Dancing";
+let favoriteNumber = 8;
+fullName = "Diyaa";
+age = 21;
+favoriteColor = "Lavender";
+hobby = "Drawing";
+console.log("Full Name:", fullName);
+console.log("Age:", age);
+console.log("Birth Country:", birthCountry);
+console.log("Favorite Color:", favoriteColor);
+console.log("Hobby:", hobby);
+console.log("Favorite Number:", favoriteNumber);
+console.log(`Hi, I am ${fullName}, ${age} years old from ${birthCountry}. My favourate color is ${favoriteColor} and hobby is ${hobby}!`);

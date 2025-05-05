@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Inline JavaScript -->
+    <button onclick="alert('Hello Diya')">Click Inline</button>
+
+    <!-- Internal JavaScript -->
+     <button id="diya">Click Internal</button>
+     <p></p>
+
+     <h2 class="Hello">Click Here</h2>
+    
+     <script>
+        var id= document.getElementById('diya')
+
+        let element = document.querySelector("p")
+            id.addEventListener("click", e=>{
+                element.innerHTML = "Hello Mahendra";
+            })
+     </script>
+     <!-- External CSS -->
+     <script src="script.js"></script>
+</body>
+</html>
+

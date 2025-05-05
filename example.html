@@ -1,0 +1,236 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation Demo</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 80%;
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            padding: 15px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+        }
+
+        .section h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        /* Hover Effects */
+        .hover-effects button {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hover-effects button:hover {
+            opacity: 0.8;
+        }
+
+        .hover-effects button.grow:hover {
+            transform: scale(1.1);
+        }
+
+        .hover-effects button.color:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .hover-effects button.shadow:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        .animations button {
+            background-color: #e0e0e0;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .animations button.fade {
+            animation: fade 2s infinite alternate;
+        }
+
+        .animations button.move {
+            animation: move 2s infinite alternate;
+        }
+
+        .animations button.bounce {
+            animation: bounce 2s infinite alternate;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 1;
+            }
+            to {
+                opacity: 0.4;
+            }
+        }
+
+        @keyframes move {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(20px);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Pseudo-classes */
+        .pseudo-classes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pseudo-classes li {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .pseudo-classes li:first-child {
+            color: #2196F3;
+        }
+
+        .pseudo-classes li:nth-child(2):hover {
+             background-color: #e0e0e0;
+        }
+
+        .pseudo-classes li:nth-child(3):active {
+             font-weight: bold;
+        }
+
+        .pseudo-classes li:nth-child(4)::after {
+            content: " (new)";
+            color: green;
+        }
+
+        /* Pseudo-elements */
+        .pseudo-elements .tooltip-container {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .pseudo-elements .tooltip-container .tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .pseudo-elements .tooltip-container .tooltip-text::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: black transparent transparent transparent;
+        }
+
+        .pseudo-elements .tooltip-container:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section hover-effects">
+            <h2>Hover Effects</h2>
+            <button class="grow">Grow</button>
+            <button class="color">Color</button>
+            <button class="shadow">Shadow</button>
+        </div>
+
+        <div class="section animations">
+            <h2>Animations</h2>
+            <button class="fade">Fade</button>
+            <button class="move">Move</button>
+            <button class="bounce">Bounce</button>
+        </div>
+
+        <div class="section pseudo-classes">
+            <h2>Pseudo-classes</h2>
+            <ul>
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+                <li>Fourth item</li>
+            </ul>
+        </div>
+
+        <div class="section pseudo-elements">
+            <h2>Pseudo-elements</h2>
+            <div class="tooltip-container">
+                <div class="tooltip-text">I'm a tooltip!</div>
+                Hover me!
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+ </body>
+ </html>
